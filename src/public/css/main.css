@@ -1,11 +1,155 @@
-body {
-	background: coral
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
 }
 
-.card {
-	margin-top: 2vh;
+.section1 {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background: #16384c;
+	flex: wrap;
+	
+	
 }
+
+.container1 {
+	position: relative;
+	width:600px;
+	display:flex; 
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 30px;
+}
+
+.card1 {
+	position: relative;
+	background: white; 
+	margin: 50px 10px;
+	padding: 20px 15px;
+	max-width: 320x;
+	height: 265px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 20px 202px rgba(0,0,0,0.5);
+	transition:0.5s ease-in-out;
+
+}
+
+.card1:hover {
+	height: 550px;
+	
+
+}
+
+
+.imgBox {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	top: -60px;
+	left: 20px;
+	z-index: 1;
+	
+} 
+
+.image {
+	width: 260px;
+	height: 260px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2); 
+	
+	border-radius: 3%;
+}
+
+ .card {
+	margin-top: 2vh;
+} 
+
+ .content {
+	position: relative;
+	margin-top: -140px;
+	padding: 10px 15px;
+	text-align: center;
+	color: #111;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.2s ease-in-out;
+
+}
+
+.card1:hover .content {
+	visibility: visible;
+	opacity: 1;
+	margin-top: -40px;
+	transition-delay: 0.3s;
+} 
+.button_container {
+	position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+}
+
+
+
+.btn {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: rgb(221, 160, 149);
+  padding: 17px 60px;
+  margin: 140px auto;
+  box-shadow: 0 5px 15px rgba(208, 101, 101, 0.891);
+}
+
+.btn span {
+   
+  z-index: 1;
+  color:white;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background:tomato;
+   -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  
+}
+
+
+
+
 
 .logo {
 	width: 30%;
 }
+
+img {
+	width: 100%;
+}
+
+

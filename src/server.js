@@ -6,6 +6,8 @@ const methodOverride = require("method-override")
 const flash = require("connect-flash")
 const session = require("express-session")
 const passport = require("passport")
+const multer = require("multer")
+const upload = multer({dest: "../public/uploads"})
 
 //Initializations
 const app = express()

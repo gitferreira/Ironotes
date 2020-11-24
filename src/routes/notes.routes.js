@@ -1,6 +1,7 @@
 const { Router } = require("express")
 const router = Router()
-
+const multer = require("multer")
+const upload = multer({dest: "../public/uploads"})
 
 const { renderNoteForm,
 	createNewNote,
@@ -14,7 +15,7 @@ const  {isAuthenticated} = require("../helpers/auth")
 //New Note
 
 router.get("/notes/add",isAuthenticated, renderNoteForm)
-router.post("/notes/new-note",isAuthenticated, createNewNote)
+router.post("/notes/new-note", isAuthenticated, createNewNote)
 
 //Get Notes
 
