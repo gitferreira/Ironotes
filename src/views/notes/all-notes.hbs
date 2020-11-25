@@ -32,30 +32,30 @@
 
 <div class="row">
 	{{#each notes}}
-	
-		<div class="col-md-4">
-			<a href = "/notes/edit/{{_id}}"><i class= "fa fa-pencil"></i></a>
-			<div class="card1">
-			<div class = "imgBox">
-				<img class = "image" src = "{{imageURL}}">
-				
-			</div> 
-			<div class = "content">
-				<div class = "text"> 
-				<h2>{{title}}</h2> 
-				<p>{{description}}</p>
+
+	<div class="col-md-4">
+		<a href="/notes/edit/{{_id}}"><i class="fa fa-pencil"></i></a>
+		<div class="card1">
+			<div class="imgBox">
+				<img class="image" src="{{imageURL}}">
+
+			</div>
+			<div class="content">
+				<div class="text">
+					<h3>{{title}}</h3>
+					<p>{{description}}</p>
 				</div>
 				<div class="button_container">
-  				 	<form action = "/notes/delete/{{_id}}?_method=DELETE" method="POST"> 
-					<input type="hidden" name="_method" value="DELETE">
-					<button  type= "submit" class="btn">
-						<span>Delete Note</span>
-					</button>
+					<form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
+						<input type="hidden" name="_method" value="DELETE">
+						<button type="submit" class="btn1">
+							<span>Delete Note</span>
+						</button>
 					</form>
-					</div>
 				</div>
-			
+			</div>
+
 		</div>
-		</div>
+	</div>
 	{{/each}}
 </div>

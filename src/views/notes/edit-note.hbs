@@ -1,23 +1,79 @@
-<div class="col-md-4 mx-auto">
-	<div class="card">
-		<div class="card-header">
-			<h3>Edit Note</h3>
-			<div class="card-body">
+<div class="container2">
+
+	<h2>Edit Note</h2>
 				<form action="/notes/edit/{{note._id}}?_method=PUT" method="POST">
-					<input type="hidden" name="_method" value= "PUT">
-					<div class="form-group">
-						<input type="text" name="title" class="form-control" value = "{{note.title}}">
+
+					<div class="group2">
+						<input type="text" name="title" value="{{note.title}}">
+						<span class="highlight"></span>
+						<span class="bar2"></span>
+						<label>Title</label>
 					</div>
-					<div class="form-group">
-						<textarea name="description" class="form-control" >{{note.description}}</textarea>
+
+					<div class="group2">
+						<input type="text" name="description" value="{{note.description}}">
+						<span class="highlight"></span>
+						<span class="bar2"></span>
+						<label>Description</label>
 					</div>
-					<div class="form-group">
-						<button class="btn btn-primary btn-block" type="submit">
-							Save
-						</button>
+
+					<div class="group2">
+						<input type="text" name="imageURL" value="{{note.imageURL}}">
+						<span class="highlight"></span>
+						<span class="bar2"></span>
+						<label>imageURL</label>
 					</div>
-				</form>
+
+		<div class="button_container2">
+			
+			
+				<button type="submit" class="btn2">
+					<span>Edit Note</span>
+				</button>
+
+					
 			</div>
+			</form>
+			</div>
+
+
+{{!-- <div class="container2">
+
+	<h2>Add a new Note</h2>
+
+	<form "/notes/edit/{{note._id}}?_method=PUT" method="POST">
+		<input type="hidden" name="_method" value= "PUT">
+
+		<div class="group2">
+			<input type="text" name="title" value = "{{note.title}}">
+			<span class="highlight"></span>
+			<span class="bar2"></span>
+			<label>Title</label>
 		</div>
-	</div>
-</div>
+
+		<div class="group2">
+			<input type="text" name="description" value = "{{note.description}}">
+			<span class="highlight"></span>
+			<span class="bar2"></span>
+			<label>Description</label>
+		</div>
+
+		<div class="group2">
+			<input type="text" name="imageURL" value = "{{note.imageURL}}">
+			<span class="highlight"></span>
+			<span class="bar2"></span>
+			<label>imageURL</label>
+		</div>
+
+		<div class="button_container2">
+			
+			
+				<button type="submit" class="btn2">
+					<span>Add Note</span>
+				</button>
+			
+		</div>
+
+	</form>
+
+</div> --}}
