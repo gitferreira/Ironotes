@@ -6,7 +6,7 @@ Ironotes is a simple yet efficient and fully functional Note Taking Web-app. It 
 
 Full-Stack application, built with Node.JS & Express.JS + Handlebars.
 
-![ironotes-home](uploads/ironotes.JPG)
+![ironotes-home](ironotes.JPG)
 
 ## Start the app 🚀
 
