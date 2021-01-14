@@ -2,7 +2,7 @@
   
 ### Description 📝
 
-Ironotes is a simple yet efficient and fully functional Note Taking Web-app. It helps you capture your ideas and find them quick and easily. 
+Ironotes is a simple yet efficient solution and fully functional Note Taking Web-app. It helps you capture your ideas and find them quick and easily. 
 
 Full-Stack application, built with Node.JS & Express.JS + Handlebars.
 
